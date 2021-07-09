@@ -1,0 +1,223 @@
+.navbar {
+  background-color: rgb(134, 199, 211);
+}
+
+.navbar-brand {
+  margin: auto;
+  font-family: viga;
+  font-weight: bold;
+}
+
+.Unduh {
+  text-align: left;
+  border-radius: 20px;
+}
+
+.nav-link {
+  margin-left: 20px;
+  color: black;
+}
+
+.jumbotron {
+  background-image: url(gambar/cover\ web\ pusdatin.png);
+  background-size: cover;
+  height: 540px;
+}
+.display-4 {
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 30px;
+}
+
+.lead {
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 15px;
+}
+
+.lead span {
+  font-size: 30px;
+  color: rgb(175, 2, 2);
+  font-weight: bold;
+}
+
+.lanjutkan {
+  margin-left: 210px;
+  margin-top: 50px;
+}
+
+.info-panel {
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 2);
+  border-radius: 12px;
+  margin-top: -40px;
+  position: relative;
+  padding: 1px;
+}
+
+.row {
+  text-align: center;
+}
+
+.col-lg img {
+  width: 50px;
+  height: 50px;
+}
+
+.workingspace {
+  margin-top: 75px;
+  font-family: viga;
+}
+
+.moto {
+  font-size: 30px;
+  color: rgb(4, 4, 114);
+}
+
+.moto span {
+  font-size: 20px;
+  color: black;
+}
+
+.semboyan span {
+  font-size: 20px;
+  color: brown;
+}
+
+/* css grafik */
+
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 360px;
+  max-width: 1000px;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+
+/* css grafik batang */
+
+.grafikbatang {
+  width: 500px;
+  margin-left: 60px;
+}
+
+.grafikbatang h4 {
+  text-align: center;
+}
+
+/* Desktop Version */
+
+@media (min-width: 992px) {
+  /* STYLE UNTUK NAVBAR */
+
+  .navbar {
+    background-color: rgb(175, 226, 241);
+    height: 30px;
+    width: auto;
+  }
+
+  .navbar-brand {
+    margin-left: 100px;
+    font-family: viga;
+    font-weight: bold;
+    color: white;
+  }
+
+  .nav-link {
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #ff0000;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 1px;
+    margin-bottom: -20px;
+    border-radius: 10px;
+  }
+
+  .Unduh {
+    margin-right: 100px;
+    border-radius: 5px;
+  }
+
+  /* STYLE UNTUK JUMBOTRON */
+
+  .jumbotron {
+    background-image: url(gambar/cover\ web\ pusdatin.png);
+    background-size: cover;
+    height: 500px;
+    width: auto;
+  }
+
+  .display-4 {
+    color: white;
+    text-align: center;
+    font-family: viga;
+    margin-top: 120px;
+    font-size: 50px;
+  }
+
+  .lead {
+    font-size: 40px;
+  }
+
+  .lanjutkan {
+    margin-left: 510px;
+    margin-top: 50px;
+  }
+
+  .info-panel {
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 1);
+    border-radius: 12px;
+    margin-top: -30px;
+    background-color: rgba(255, 255, 255, 0.075);
+    position: relative;
+    padding: 5px;
+  }
+
+  .col-lg img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .grafikbatang {
+    width: 1000px;
+    margin-left: 120px;
+  }
+}
