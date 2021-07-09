@@ -94,8 +94,8 @@
 
 .jumbotron {
   background-color: bisque;
-  width: 956px;
-  margin-left: -130px;
+  width: auto;
+  margin-left: auto;
 }
 
 .display-4 {
@@ -116,8 +116,41 @@
 
 .workingspace h5 {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   color: darkblue;
+}
+
+.workingspace img {
+  border-radius: 20px;
+}
+
+.row {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.row p {
+  color: blue;
+  font-weight: bold;
+}
+
+.row img {
+  border-radius: 15px;
+}
+
+.py-5 {
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.display-5 {
+  margin-top: -120px;
+}
+
+.mb-4 {
+  margin-top: -10px;
 }
 
 /* desktop */
@@ -144,9 +177,13 @@
   }
 
   .jumbotron {
-    background-color: bisque;
-    width: auto;
-    margin: auto;
+    background-color: rgba(119, 136, 153, 0.212);
+    width: 1200px;
+    margin-left: -42px;
     border-radius: 20px;
+    box-shadow: rgb(0, 0, 0);
+    padding: 20px;
+    position: relative;
+    margin-top: -20px;
   }
 }
