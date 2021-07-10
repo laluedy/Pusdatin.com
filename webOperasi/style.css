@@ -1,11 +1,18 @@
 /* style navbar */
 .navbar-brand {
   font-family: "Times New Roman", Times, serif;
+  color: white;
 }
 
-.nav-link {
+.nav-item .nav-link {
+  color: white;
   margin-left: 30px;
 }
+
+.Unduhan {
+  margin-right: 120px;
+}
+
 /* awal style slide foto */
 
 /*jssor slider loading skin spin css*/
@@ -125,6 +132,31 @@
   opacity: 1;
 }
 
+.py-5 h1 {
+  color: rgb(255, 255, 255);
+  margin-top: -95px;
+}
+
+.fw-bold span {
+  color: red;
+}
+
+.fs-4 {
+  font-family: viga;
+}
+
+.rounded-3 {
+  background-image: url(gambar/jumbotron1.png);
+  height: 250px;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 1);
+}
+
+.py-5 p span {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
 /* akhir style slide foto */
 
 /*  */
@@ -138,12 +170,8 @@
     text-transform: uppercase;
   }
 
-  .nav-link {
+  .nav-item .nav-link {
     color: white;
-    margin-left: 30px;
-  }
-
-  .Unduhan {
-    margin-right: 120px;
+    text-transform: uppercase;
   }
 }
