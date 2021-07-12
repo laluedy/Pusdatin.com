@@ -6,7 +6,7 @@
 }
 
 .Unduh {
-  margin-right: 30px;
+  margin-right: 50px;
   border-radius: 10px;
 }
 
@@ -92,8 +92,8 @@
 
 /* akhir style foto slide */
 
-.jumbotron {
-  background-color: bisque;
+.Jabalnusra {
+  background-color: rgb(255, 255, 255);
   width: auto;
   margin-left: auto;
 }
@@ -106,7 +106,7 @@
   margin-left: 30px;
 }
 
-.jumbotron p {
+.jabalnusra p {
   margin-left: 30px;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .workingspace img {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .row {
@@ -136,17 +136,21 @@
 }
 
 .row img {
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .py-5 {
-  height: 300px;
-  border-radius: 20px;
+  height: 400px;
+  border-radius: 10px;
   margin-top: 30px;
 }
 
+.py-5 h1 {
+  margin-top: -70px;
+}
+
 .display-5 {
-  margin-top: -120px;
+  margin-top: -135px;
 }
 
 .mb-4 {
@@ -157,11 +161,11 @@
 @media (min-width: 992px) {
   .navbar-brand {
     font-family: viga;
-    margin-left: 20px;
+    margin-left: 50px;
   }
   .navbar {
     text-transform: uppercase;
-    background-color: rgba(248, 217, 176, 0.326);
+    background-color: rgb(255, 255, 255);
     width: auto;
     margin: auto;
   }
@@ -176,14 +180,14 @@
     border-radius: 10px;
   }
 
-  .jumbotron {
-    background-color: rgba(119, 136, 153, 0.212);
+  .Jabalnusra {
+    background-color: rgb(119, 136, 153);
     width: 1200px;
     margin-left: -42px;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: rgb(0, 0, 0);
     padding: 20px;
     position: relative;
-    margin-top: -20px;
+    margin-top: 3px;
   }
 }

@@ -21,10 +21,8 @@
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="sticky-footer.css" rel="stylesheet">
-    
-    
 
+    
         
 
     <title>Kegiatan Operasi</title>
@@ -93,6 +91,7 @@
                 {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
                 {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
               ];
+              
   
               var jssor_1_options = {
                 $AutoPlay: 1,
@@ -145,8 +144,7 @@
       
       <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
           <!-- Loading Screen -->
-          <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-              <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+          <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center">              
           </div>
           <div data-u="slides" style="cursor:default;position:relative; border-radius:10px;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
               <div>
@@ -244,34 +242,57 @@
         </div>   
       </div>
     </main>
+    <p></p>
 
 
     <!-- akhir Jumbotron bootstrap 5 -->
 
-    <!-- awal dashboard -->
+    <!-- awal grafik highcharts -->
 
-    
-    
-    <div class="container-fluid">
-      <div class="row">
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h4">Operasi Pengamanan Kawasan Hutan. Luas (Ha) Yang Diamankan</h4>
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group me-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary"></button>
-                <button type="button" class="btn btn-sm btn-outline-secondary"></button>
-              </div>
-              <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                <span data-feather="calendar"></span>
-                
-              </button>
-            </div>
-          </div>    
-          <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> 
-          
-        </main>
-      </div>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>    
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<figure class="highcharts-figure">
+  <div id="container">
+      <p class="highcharts-description">
+        Chart showing how an HTML table can be used as the data source for the
+        chart using the Highcharts data module. The chart is built by
+        referencing the existing HTML data table in the page. Several common
+        data source types are available, including CSV and Google Spreadsheet.
+      </p>
+  </div>
+        <div class="table">
+        <table id="datatable">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Operasi Pengamanan</th>
+              <th>Operasi TSL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Seksi Wilayah 1 Jakarta</th>
+              <td>6</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>Seksi wilayah 2 Surabaya</th>
+              <td>4</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th>Seksi wilayah 3 Kupang</th>
+              <td>1</td>
+              <td>4</td>
+            </tr>     
+          </tbody>
+        </table>
+      </div>  
+</figure>
+
+<!-- gambar grafik dan peta -->
       <div class="container">
       <div class="col-12 peta">
       <div class="row workingspace">            

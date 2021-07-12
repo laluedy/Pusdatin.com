@@ -27,50 +27,7 @@
          <!-- jQuery-FusionCharts -->
          <script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
          <!-- Fusion Theme -->
-         <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-
-      <!-- coba grafik di head -->
-
-      <script type="text/javascript">
-         FusionCharts.ready(function(){
-            var chartObj = new FusionCharts({
-       type: 'pie2d',
-       renderAt: 'chart-container',       
-       width: '550',
-       height: '350',
-       dataFormat: 'json',
-       dataSource: {
-           "chart": {
-               "caption": "Tipologi Penanganan Kasus LHK P21",
-               "subCaption": "Tahun 2021",
-               "numberPrefix": " ",
-               "showPercentInTooltip": "0",
-               "decimals": "1",
-               "useDataPlotColorForLabels": "1",
-               //Theme
-               "theme": "fusion"
-           },
-           "data": [{
-               "label": "Pembalakan Liar",
-               "value": "12"
-           }, {
-               "label": "Kejahatan TSL",
-               "value": "7"
-           }, {
-               "label": "Limbah B3",
-               "value": "4"
-           }, {
-               "label": "Kebakaran Hutan dan Lahan",
-               "value": "0"
-           }]
-       }
-   }
-   );
-            chartObj.render();
-         });
-      </script>
-
-      
+         <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>      
      
       <!-- script untuk lokal file fusion -->
 
@@ -80,8 +37,7 @@
          <!-- jQuery-FusionCharts -->
          <script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"></script>
          <!-- Fusion Theme -->
-         <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
-      
+         <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>   
       
 
       <!-- script grafik batang -->
@@ -253,9 +209,49 @@
                });
          </script>
 
+         <!-- akhir grafik hight cart -->
+
          <!-- awal grafik fusioncharts -->
 
-         <div class="row grafik">            
+         <div class="row grafik">
+            <script type="text/javascript">
+               FusionCharts.ready(function(){
+                  var chartObj = new FusionCharts({
+             type: 'pie2d',
+             renderAt: 'chart-container',       
+             width: '550',
+             height: '350',
+             dataFormat: 'json',
+             dataSource: {
+                 "chart": {
+                     "caption": "Tipologi Penanganan Kasus LHK P21",
+                     "subCaption": "Tahun 2021",
+                     "numberPrefix": " ",
+                     "showPercentInTooltip": "0",
+                     "decimals": "1",
+                     "useDataPlotColorForLabels": "1",
+                     //Theme
+                     "theme": "fusion"
+                 },
+                 "data": [{
+                     "label": "Pembalakan Liar",
+                     "value": "12"
+                 }, {
+                     "label": "Kejahatan TSL",
+                     "value": "7"
+                 }, {
+                     "label": "Limbah B3",
+                     "value": "4"
+                 }, {
+                     "label": "Kebakaran Hutan dan Lahan",
+                     "value": "0"
+                 }]
+             }
+         }
+         );
+                  chartObj.render();
+               });
+            </script>            
             <div class="col">
                <div id="chart-container">FusionCharts XT will load here!</div>
                
